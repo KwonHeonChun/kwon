@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>document.write</title>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>어서오세요</h1>");
+
+      // 이것은 한줄 주석입니다
+      
+		
+	
+
+      // 아래 처럼 여러 tag를 출력하고 싶다면 document.write()를 계속 써야하나?
+      // document.write("<h1>어서오세요1</h1>");
+      // document.write("<h1>어서오세요2</h1>");
+      // document.write("<h1>어서오세요3</h1>");
+
+      // 뒤에서 배울 연결연산자 (+)를 사용해 뮨저를 합쳐준다.
+      // document.write(
+      // "<h1>어서오세요1</h1>\n" +
+      // "<h1>어서오세요2</h1>\n" +
+      // "<h1>어서오세요3</h1>\n"
+      // );
+
+      // + 연산자를 사용하니 귀찮다. 복잡하다... 그래서 템플릿 문자열 사용
+      // 백틱(`) 왼쪽 맨위 숫자키 1 옆에 기호
+      // 앞으로 문자들은 대부분 템플릿 문자열로 표현해준다.
+      // 뒤에서 다시 설명함
+        // document.write(`
+      	// 	<h1>어서오세요1</h1>
+      	// 	<h1>어서오세요2</h1>
+      	// 	<h1>어서오세요3</h1>
+      	// `);
+    </script>
+  </body>
+</html>

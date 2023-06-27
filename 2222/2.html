@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+<title>
+</title>
+<style>
+    * {
+       margin:0;
+    }
+</style>
+</head>
+<body>
+<form id="myForm" method="get" action = "./register">
+    <input type ="hidden" id="hid"value="히든속성">
+    <fieldset>
+        <legend>필수</legend>
+        아이디   <input type="text" id="id" placeholder="아이디 입력" autofocus>
+        비밀번호 <input type="password" id="passwd">
+        <input type="submit" value="로그인" ><br>
+        이름   <input type="text" id="name"><br>
+        이메일   <input type="email" id="email"><br>
+        연락처   <input type="tel" id="tel"><br>
+        생년월일:
+        <input type="date" id="date">
+        <input type="month" id="month">
+        <input type="week" id="week">
+    </fieldset>
+    <fieldset>
+        <legend>선택</legend>
+        성별:
+        <input type="radio" id="gender" name="gender" value="w">여자
+        <input type="radio" id ="gender" name="gender" value="m">남자
+        <br>
+        관심분야:
+        <input type="checkbox" id="front" name="front" value="front">프론트엔드
+        <input type="checkbox" id="back" name="back" value="back">백엔드
+        <input type="checkbox" id="full" name="full" value="full">풀스택<br>
+        나이:<input type="number" id="age" value="10" min="10" max="100"><br>
+        발사이즈:<input type="range" id="foot" step="5" value="100" min="100" max="300"><br>
+    </fieldset>
+    <input type="button" id="btn1" value="회원가입" >
+    <input type="button" id="btn2" value="아이디보기" onclick="alert(myForm.hid.value)">
+    <input type="button" id="btn3" value="이메일보기" onclick="alert()">
+    <input type="button" id="btn4" value="연락처보기" onclick="alert()">
+    <input type="button" id="btn5" value="생년월일보기" onclick="alert()">
+    <input type="button" id="btn6" value="성별보기" onclick="alert(alert())">
+    <input type="button" id="btn7" value="관심분야보기" onclick="alert()">
+    <input type="button" id="btn8" value="나이보기" onclick="alert()">
+    <input type="button" id="btn9" value="발사이즈" onclick="alert()">
+    <input type="reset" id="rset" value="초기화">
+    <input type="file">
+    메모<textarea id="memo" cols="40" rows="4"></textarea><br>
+    <select>
+        <option value="값1">내용1</option>
+        <option value="값2">내용2</option>
+        <option value="값3">내용3</option>
+        <option value="값4" selected>내용4</option>
+
+    </select>
+  </form>
+</body>
+</html>

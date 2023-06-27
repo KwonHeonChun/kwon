@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <form name="PI">
+
+
+    <input type="hidden" id="hidden" value="Hello, world!">
+    <table border="1" width="100%">
+      <tr>
+        <th align="center" bgcolor="#ccccff" colspan="2" >회원 기본 정보</th>
+      </tr>
+      <tr>
+        <td width="10%">아이디</td>
+        <td><input type="text" id="userid" size="30" maxlength="30" autofocus><label>4 ~ 12 자의 영문 대소문자와 숫자로만 입력</label></td>
+      </tr>
+      <tr>
+        <td>비밀번호</td>
+        <td><input type="password" id="userpw" name="user-pw" size="30" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td>비밀번호 확인</td>
+        <td><input type="password" id="pwcf" name="pwcf" size="30" maxlength="30"></td>
+      </tr>
+      <tr>
+        <td>메일 주소</td>
+        <td><input type="text" id="mail" name="mail"><input type="text" id="domain" name="domain" value="@domain.com" readonly></td>
+      </tr>
+      <tr>
+        <td>연락처</td>
+        <td><input type="text" id="tel" name="tel" placeholder="하이픈(-)을 빼고 입력해주세요."></td>
+      </tr>
+      <tr>
+        <td>수신여부</td>
+        <td><input type="radio" id="susin" name="susin">수신<input type="radio" name="susin" checked>수신거부</td>
+      </tr>
+      <tr>
+        <td>이름</td>
+        <td><input type="text" id="name" name="name"></td>
+      </tr>
+    </table>
+   <br>
+
+   
+    <table border="1" width="100%">
+      <tr>
+        <th bgcolor="#ccccff" colspan="4" >개인 신상 정보</th>
+      </tr>
+      <tr>
+        <td width="10%">주민등록번호</td>
+        <td><input type="text" id="jumin" name="jumin"><label>예) 1234561234567</label></td>
+        <td width="10%">생일</td>
+        <td>
+          <select size="3 " > 
+            <option value="2003" selected>2003</option>
+            <option value="2002" selected>2003</option>
+            <option value="2003" selected>2003</option>
+            <option value="2004" selected>2003</option>
+
+            
+          </select>년
+          <select> <option value="1" selected>1</option></select>월
+          <select> <option value="1" selected>1</option></select>일
+        </td>
+      </tr>
+      <tr>
+        <td>가족수</td>
+        <td><input type="password" id="family" name="family"></td>
+        <td>미팅일자</td>
+        <td><input type="date" id="date" name="date"></td>
+      </tr>
+      <tr>
+        <td>가입경로</td>
+        <td>
+          <input type="text" id="path_txt" name="path_txt" list="path">
+          <datalist type="text" name="path" id="path"></datalist>
+        </td>
+        <td>관심분야</td>
+        <td>
+          <input type="checkbox">컴퓨터
+          <input type="checkbox">인터넷
+          <input type="checkbox">여행
+          <input type="checkbox">영화감상
+          <input type="checkbox">음악감상
+        </td>
+      </tr>
+      <tr>
+        <td>자기소개</td>
+        <td><textarea cols="30" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td>첨부파일</td>
+        <td><input type="file"></td>
+      </tr>
+    </table>
+
+    <input type="submit" value="회원가입">
+    <input type="button" value="다시입력" onclick="location.reload()">
+    <input type="button" value="팝업창열기" onclick="window.open('input.html')">
+    <input type="button" value="아이디알기" onclick="alert(PI.userid.value)">
+    <input type="button" value="메일주소로그남기기">
+    <button type="button"><img src="asdfsa"></button>
+    <input type="button" onclick="alert(PI.hidden.value)" value="완료"></input>
+  </form>
+  
+</body>
+</html>

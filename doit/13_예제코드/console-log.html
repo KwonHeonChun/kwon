@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <h1>어서오세요</h1>
+    <script>
+      var name = prompt("이름을 입력하세요.");
+      console.log(name + "님, 환영합니다.");
+
+        console.time("timer");
+
+        console.warn(name + "님, warn 입니다.");
+        console.error(name + "님, error 입니다.");
+        console.info(name + "님, info 입니다.");
+
+        console.group("1번째 그룹");
+        console.log("1번째 그룹에 포함된 로그");
+        console.group("2번째 그룹");
+        console.log("2번째 그룹에 포함된 로그");
+        console.warn("2번째 그룹에 포함된 로그");
+        console.groupEnd();
+        console.groupEnd();
+
+        console.log("console.log 테스트 끝");
+
+        // 시간 측정용
+        sum = 0;
+        for (let i = 1; i <= 1e6; i++) {
+          sum += i;
+        }
+        console.timeEnd("timer");
+    </script>
+  </body>
+</html>

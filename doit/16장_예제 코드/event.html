@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>당첨자 발표</title>
+    <style>
+      h1 {
+        border: 1px solid black;
+        padding: 10px;
+        text-align: center;
+        background: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>당첨자 발표</h1>
+    <!-- 전체 응모자수를 prompt로 입력 받아서 아래와 같은 결과 화면을 출력시켜보세요 -->
+    <script>
+      const user = parseInt(prompt("전체응모자수 입력"));
+      const roto = Math.floor(Math.random() * 100 + 1);
+      document.write(`전체응모자수: ${user}명 <br> 당첨자번호: ${roto}명`);
+    </script>
+  </body>
+</html>
